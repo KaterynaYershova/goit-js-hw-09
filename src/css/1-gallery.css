@@ -1,16 +1,35 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.gallery-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
+  margin: 0;
+  gap: 10px; /* Відступи між елементами галереї */
 }
 
 .gallery-item {
-  margin: 10px;
+  flex: 1 1 calc(33.333% - 10px);
+  box-sizing: border-box;
+}
+
+.gallery-link {
+  display: block;
 }
 
 .gallery-image {
-  display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
+  display: block;
 }
